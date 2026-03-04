@@ -1,0 +1,11 @@
+services:
+  my-server:
+    build: .
+    ports:
+      - "3000:3000"
+  
+  python-server:
+    build: ./sample/
+    ports:
+      - "8000:8000"
+    
